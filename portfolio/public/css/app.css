@@ -1,0 +1,136 @@
+body {
+    /*background-image: url("../public/images/fond.png");
+    background-repeat: no-repeat;*/
+    background-color: #C4C8CB ;
+    font-family: 'Abel', sans-serif;
+    flex-direction: column;
+}
+
+.buttons{
+    position:fixed;
+    left:0;
+    margin-top:10%;
+    margin-left:3%;
+}
+.cvFond{
+    background-image: url("/images/fondChapeau.png");
+}
+.stagesFond{
+    background-image: url("/images/fondChapeau.png");
+}
+.photo{
+    width: 25%;
+    height: 25%;
+}
+.nom{
+    font-weight: bold;
+    margin:auto;
+    padding-top:15%;
+}
+.pageContent{
+    background-color: white;
+    margin: 8% 15% 8% 15%;
+    padding:5vh;
+}
+.bloc{
+    margin:5%;
+    padding:0;
+    border: none;
+    text-align:justify;
+}
+.presentation{
+    margin:5rem;
+    padding:2rem;
+    display: flex;
+}
+
+@keyframes move-eye-skew {
+    0% {
+      transform: none;
+    }
+    20% {
+      transform: translateX(-34px) translateY(15px) skewX(8deg) skewY(-5deg) scale(0.95);
+    }
+    25%, 44% {
+      transform: none;
+    }
+    50%, 60% {
+      transform: translateX(34px) translateY(-20px) skewX(3deg) skewY(1deg) scaleX(0.95);
+    }
+    66%, 100% {
+      transform: none;
+    }
+  }
+  
+  .ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 40%, #fcfcfc, #efeff1 66%, #9b5050 100%);
+  }
+  .ball:after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+    transform: translateX(-40px) translateY(-45px) skewX(-10deg);
+  }
+  
+  .iris {
+    width: 40%;
+    height: 40%;
+    margin: 30%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #208ab4 0%, #6fbfff 30%, #4381b2 100%);
+    transform: translateX(34px) translateY(-30px) skewX(8deg) skewY(1deg);
+    position: absolute;
+    animation: move-eye-skew 5s ease-out infinite;
+  }
+  .iris:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 37.5%;
+    height: 37.5%;
+    border-radius: 50%;
+    top: 31.25%;
+    left: 31.25%;
+    background: black;
+  }
+  .iris:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 31.25%;
+    height: 31.25%;
+    border-radius: 50%;
+    top: 18.75%;
+    left: 18.75%;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .ball .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+  transform: rotateX(45deg) translateZ(-75px);
+    z-index: -1;
+  }
+  .stage {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+    perspective: 600px;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform: rotateY(0.01deg);
+  }
