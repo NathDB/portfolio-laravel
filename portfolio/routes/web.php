@@ -43,3 +43,9 @@ Route::get('/bts', function () {
 Route::get('/contact', function () {
     return view('home.contact');
 });
+
+Route::get('/twitter', function () {
+    return view('home.twitter');
+});
+Route::get('twitterUserTimeLine', 'TwitterController@twitterUserTimeLine');
+Route::post('tweet', ['as'=>'post.tweet','uses'=>'TwitterController@tweet']);
