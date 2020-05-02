@@ -5,6 +5,10 @@ body {
     font-family: 'Abel', sans-serif;
     flex-direction: column;
 }
+a:link
+{
+  text-decoration:none;
+}
 
 .buttons{
     position:fixed;
@@ -133,4 +137,9 @@ body {
     perspective-origin: 50% 50%;
     transform-style: preserve-3d;
     transform: rotateY(0.01deg);
+  }
+  .bts{
+    display:flex;
+    flex-direction: row;
+
   }

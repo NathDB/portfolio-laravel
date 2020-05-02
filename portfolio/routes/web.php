@@ -39,6 +39,12 @@ Route::get('/veille_juridique', function () {
 Route::get('/bts', function () {
     return view('home.bts');
 });
+Route::get('/bts/presentation', function () {
+    return view('bts.presentation');
+});
+Route::get('/bts/competences', function () {
+    return view('bts.competences');
+});
 
 Route::get('/contact', function () {
     return view('home.contact');
